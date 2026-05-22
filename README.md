@@ -34,7 +34,7 @@ OverlappingSpecies/
 ├── SpeciesA_SpeciesB/
 │   ├── mix001.wav
 │   └── mix002.wav
-└── SpeciesA_SpeciesC(optional_note)/
+└── SpeciesA_SpeciesC_SpeciesD/
     └── mix003.flac
 ```
 
@@ -135,7 +135,7 @@ progressive project/
 From this folder:
 
 ```bash
-cd "/media/rtr-system/0924507943/Hubert/progressive project"
+cd "/media/rtr-system/Hubert/progressive project"
 git init
 git add .
 git commit -m "Initial release: progressive HuBERT multi-label species classification"
@@ -149,16 +149,7 @@ Do not commit large audio datasets or `.pt` checkpoints; they are listed in `.gi
 
 ## Citation
 
-If you use this code in research, please cite the HuBERT model:
 
-```bibtex
-@inproceedings{hsu2021hubert,
-  title={HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units},
-  author={Wei-Ning Hsu and Benjamin Bolte and Yao-Hung Hubert Tsai and Kushal Lakhotia and Ruslan Salakhutdinov and Abdelrahman Mohamed},
-  booktitle={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-  year={2021}
-}
-```
 
 ## License
 
