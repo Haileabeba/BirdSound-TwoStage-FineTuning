@@ -1,6 +1,6 @@
 # procomment5foldcross
 
-Extension of **procomment** (reviewer response: fair optimizer-step comparison) with **5-fold cross-validation** for all three HuBERT fine-tuning strategies.
+Extension of **procomment** (fair optimizer-step comparison) with **5-fold cross-validation** for all three HuBERT fine-tuning strategies.
 
 ## What this adds beyond procomment
 
@@ -31,7 +31,7 @@ Fold k:
 ## Quick start
 
 ```bash
-cd "/media/rtr-system/0924507943/Hubert/procomment5foldcross"
+cd "/media/rtr-system/Hubert/procomment5foldcross"
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt && pip install -e .
 
@@ -75,11 +75,6 @@ outputs/cv_5fold/
 | `match_total_updates` | true | Fair step budget (procomment) |
 | `phase1_epochs`, `phase2_epochs` | 50 | Define progressive total budget |
 | `seed` | 42 | KFold shuffle seed |
-
-## Relation to procomment
-
-Use **procomment** for a single fair comparison and paper Figures 6–7.  
-Use **procomment5foldcross** when reviewers or the paper need **cross-validated mean ± std** results.
 
 ## License
 
