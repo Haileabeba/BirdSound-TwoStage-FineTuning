@@ -1,0 +1,16 @@
+# Rename to local.yaml and edit paths before training.
+
+single_species_path: "/absolute/path/to/SingleSpecies"
+overlapping_species_path: "/absolute/path/to/OverlappingSpecies"
+output_dir: "outputs"
+
+seed: 42
+train_frac: 0.8
+batch_size: 16
+encode_batch_size: 8
+epochs: 50
+learning_rate: 1.0e-4
+phase1_epochs: 50
+phase2_epochs: 50
+phase1_learning_rate: 1.0e-4
+phase2_learning_rate: 5.0e-6

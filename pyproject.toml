@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "progressive-hubert"
+version = "0.1.0"
+description = "HuBERT-based progressive training for multi-label overlapping species audio classification"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.36.0",
+    "datasets>=2.14.0",
+    "librosa>=0.10.0",
+    "soundfile>=0.12.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "tqdm>=4.65.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+progressive-hubert = "progressive_hubert.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["progressive_hubert*"]
